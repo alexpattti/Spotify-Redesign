@@ -8,6 +8,12 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
+/* This is the foundation of the app. This handles important things like:
+Loading fonts
+Managing the splash screen
+Setting up the theme (light/dark mode)
+Creating the basic navigation structure  */
+
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 

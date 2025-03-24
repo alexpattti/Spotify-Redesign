@@ -11,6 +11,11 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
+  /* Think of this as the first floor of the house (app). This is specifically designed for the tab navigation of the app. It's nested inside the root layout and it focuses on:
+    - Creating the bottom tab bar
+    - Setting up the tab icons and their appearance
+    - Managing the tab-specific navigation */
+  
   return (
     <Tabs
       screenOptions={{
