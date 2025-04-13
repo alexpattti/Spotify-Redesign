@@ -2,9 +2,8 @@
 ---
 This is built with React Native right now so that way I can showcase how it should work on everything.
 
-- Colors: [Colors](/Users/alexpatti/Desktop/Coding/Spotify/constants/Colors.ts)
-- Icons: [Icons](/Users/alexpatti/Desktop/Coding/Spotify/constants/Icons.ts)
-- Fonts: [Fonts](/Users/alexpatti/Desktop/Coding/Spotify/constants/Fonts.ts)
+Productivity Dates:
+4/12/2025 - 2hr 8min
 
 ## Notes for me:
 - git add ., git commit -m "", git push
