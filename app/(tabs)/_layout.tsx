@@ -6,12 +6,14 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
-import LibrarySvg from '@/assets/Icons/Property 1=Library.svg';
-import LibraryFilledSvg from '@/assets/Icons/Name=Library, Filled=Yes.svg';
-import SearchSvg from '@/assets/Icons/Property 1=Search.svg';
-import SearchFilledSvg from '@/assets/Icons/Name=Search, Filled=Yes.svg';
 import HomeSvg from '@/assets/Icons/Property 1=Home.svg';
 import HomeFilledSvg from '@/assets/Icons/Name=Home, Filled=Yes.svg';
+import DiscoverSvg from '@/assets/Icons/Name=Discover, Filled=No.svg';
+import DiscoverFilledSvg from '@/assets/Icons/Name=Discover, Filled=Yes.svg';
+import SearchSvg from '@/assets/Icons/Property 1=Search.svg';
+import SearchFilledSvg from '@/assets/Icons/Name=Search, Filled=Yes.svg';
+import LibrarySvg from '@/assets/Icons/Property 1=Library.svg';
+import LibraryFilledSvg from '@/assets/Icons/Name=Library, Filled=Yes.svg';
 import AccountSvg from '@/assets/Icons/Property 1=User.svg';
 import AccountFilledSvg from '@/assets/Icons/Name=User, Filled=Yes.svg';
 import { AnimatedTabButton } from '@/components/AnimatedTabButton';
@@ -56,6 +58,18 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="discover"
+        options={{
+          title: 'Discover',
+          tabBarIcon: ({ color, focused }) => 
+            focused ? (
+              <DiscoverFilledSvg width={40} height={40} color={color} />
+            ) : (
+              <DiscoverSvg width={40} height={40} color={color} />
+            ),
+        }}
+      />
+      <Tabs.Screen
         name="search"
         options={{
           title: 'Search',
@@ -82,7 +96,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="account"
         options={{
-          title: 'Account',
+          title: 'Me',
           tabBarIcon: ({ color, focused }) =>
             focused ? (
               <AccountFilledSvg width={40} height={40} color={color} />
